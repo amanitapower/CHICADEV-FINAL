@@ -15,23 +15,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  
 </head>
 <body>
   <header>
-    <img src="img/logo2.png" alt="" class="logo"></a>
+    
     <nav>
-      <ul>
+      <ul class="lista">
+        <li><img src="img/logo2.png" alt="" class="logo"></a></li>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#proyectos">Episodios</a></li>
+        <li><a href="#servicios">Episodios</a></li>
         <li><a href="#contacto">Contacto</a></li>
-        <li><a href="" target="_blank">Merch</a></li>
+        <li><a href="merch.html" target="_blank">Merch</a></li>
       </ul>
     </nav>
   </header>
 
   
-
+  <div class="principal vertical-centered-text" id="home">
+    <div class="col-md-8 cta"><h1>Chicas Dev</h1> 
+        <h4>Somos un podcast sobre feminismos y tecnologías.</h4>
+        <p>Te invito a que escuches nuestro último podcast en el botón de acá abajo.</p>
+  <a  href="https://open.spotify.com/user/31eingqmea7uuroi6vkmk7ffspqe" class="btn btn-primary orange" id="boton" target="_blank">ESCUCHA CHICADEV</a>
+  
+  
+      </div>
+  </div>
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -55,27 +67,47 @@
   </div>
 
 
-  <div id="youtube-container"></div>
-
-  
-  <section id="proyectos">
-    <h2>PROYECTOS</h2>
+  <div  class="container" id="servicios">
+  <div  class="row">
+    <div class="col-md-12">
+			<h1>PROYECTOS</h1>
+		</div>
     <br>
-    <div class="project">
+    <div class="video-container">
+    <div class="video">
       <h3>Episodio 1</h3>
       <p>Ley Olimpia y Ley Belen</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/MMoscDRxo48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="545" height="300" src="https://www.youtube.com/embed/MMoscDRxo48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="project">
+    <div  class="video">
       <h3>Episodio 2</h3>
       <p>Mujeres y el acceso a las tecnologias</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/o4AkouigkGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="545" height="300" src="https://www.youtube.com/embed/o4AkouigkGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-  </section>
-  <div class="container my-5">
-
-
+    </div>
   </div>
+</div>
+  <footer>
+    <div class="container" id="contacto">
+      <div class="row">
+        <div class="col-md-12">
+            <h1>CONTACTO</h1><br><br>
+  
+        </div>
+      </div>
+      <div class="row social">
+      <div class="col-3"></div>	
+            <div class="col-2">
+              <a href="mailto:amanitapower@gmail.com"><img src="img/001-mail.svg" alt=""></a></div>
+  
+            <div class="col-2">
+              <a href="https://www.facebook.com/miaustudio"  target="_blank"><img src="img/002-facebook-logo.svg" alt=""></a></div>
+  
+  
+            <div class="col-2">
+              <a target="_blank" href="https://www.instagram.com/miastudio_/" ><img src="img/003-instagram-social-network-logo-of-photo-camera.svg" alt="" ></a></div>	
+    </div>
+  </footer>
   
   <a href="https://api.whatsapp.com/send?phone=543425696044&text=Hola%20qu%C3%A9%20tal?" target="_blank" class="whatsapp-button">
     <img src="img/wsp.png" alt="WhatsApp">

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="img/icon.png"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chica Dev</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <ul class="lista">
+        <li><img src="img/logo2.png" alt="" class="logo"></a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html">Episodios</a></li>
+        <li><a href="index.html">Contacto</a></li>
+        <li><a href="merch.html">Merch</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container mt-5" id="contenedorMerch">
+    <h2 class="mb-4">Nuestro merch</h2>
+  
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/cap1.png" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">CAP</h5>
+            <p class="card-text">Gorrita con mucha onda</p>
+            <a href="#" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal" data-img="img/cap1.png">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/mug1.png" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">MUG</h5>
+            <p class="card-text">Alta taza amigue</p>
+            <a href="#" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal" data-img="img/mug1.png">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/tsh1.png" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">T-SHIRT</h5>
+            <p class="card-text">Mira esta casaca loke</p>
+            <a href="#" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal" data-img="img/tsh1.png">Ver Detalles</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal para mostrar la imagen en grande -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Imagen en Grande</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="img/cap1.png" class="img-fluid" alt="Imagen en grande">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+ <footer>
+    <div class="container" id="contacto">
+      <div class="row">
+        <div class="col-md-12">
+            <h1>CONTACTO</h1><br><br>
+  
+        </div>
+      </div>
+      <div class="row social">
+      <div class="col-3"></div>	
+            <div class="col-2">
+              <a href="mailto:amanitapower@gmail.com"><img src="img/001-mail.svg" alt=""></a></div>
+  
+            <div class="col-2">
+              <a href="https://www.facebook.com/miaustudio"  target="_blank"><img src="img/002-facebook-logo.svg" alt=""></a></div>
+  
+  
+            <div class="col-2">
+              <a target="_blank" href="https://www.instagram.com/miastudio_/" ><img src="img/003-instagram-social-network-logo-of-photo-camera.svg" alt="" ></a></div>	
+    </div>
+  </footer>
+  
+  <a href="https://api.whatsapp.com/send?phone=543425696044&text=Hola%20qu%C3%A9%20tal?" target="_blank" class="whatsapp-button">
+    <img src="img/wsp.png" alt="WhatsApp">
+</a>
+  <!-- Codigo que hace que las acciones de botones y cuestiones responsive funcionen-->
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    
+   <script>
+      // JavaScript para manejar el clic en el botón "Ver Detalles"
+      $(document).ready(function(){
+        $('.btn-primary').click(function(){
+          var imgSrc = $(this).data('img');
+          $('#modalImage').attr('src', imgSrc);
+        });
+      });
+    </script>
+  </body>
+</html>

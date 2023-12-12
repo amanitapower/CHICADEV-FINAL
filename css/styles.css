@@ -6,6 +6,19 @@ body {
   padding: 0;
 }
 
+.container{
+  
+  padding-bottom: 50px;
+}
+
+.vertical-centered-text {
+  -ms-display: flex;
+  display: flex;
+  /* alineacion vertical */
+  align-items: center;
+   /* alineacion horizontal */
+  justify-content: center;
+}
 header {
   background-color: #dc91ff;
   color: black;
@@ -13,19 +26,41 @@ header {
 }
 
 h1 {
-  font-family: IBM Plex Mono;
+  font-family: 'Silkscreen', sans-serif;
+  margin: 0;  
+  text-align: center;
+}
+
+.lista{
+  font-family: 'Silkscreen', sans-serif;
+}
+#boton
+{
+  background-color: #dc91ff;
+  border-color: greenyellow;
+}
+h3 {
+  font-family: 'Silkscreen', sans-serif;
   margin: 0;  
 }
 
-#youtube-container {
-  margin: 10; 
-}
-#proyectos h2 {
-    font-family: IBM Plex Mono;
-}
 
 h2 {
-  font-family: IBM Plex Mono;
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+}
+
+.cta{
+	text-align: center;
+}
+
+.images .col-md-3{
+	padding-top: 20px;
+
+}
+h2 {
+  font-family: 'Silkscreen', sans-serif;
+  text-align: center;
 }
 
 nav ul {
@@ -35,9 +70,19 @@ nav ul {
 
 nav ul li { 
   display: inline;
-  margin-right: 10px;
-  margin-bottom: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
+
+.video
+{ 
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
+  border-width: 1px;
+  border-color: #dc91ff;
+}
+
 
 nav ul li a {
   
@@ -45,10 +90,25 @@ nav ul li a {
   text-decoration: none;
 }
 
-section {
-  padding: 50px;
+
+
+#home {
+	color: white;
 }
 
+#home{
+	padding-top: 65px;
+}
+
+.principal{
+	background: red;
+	height: 90vh;
+	background: url(../img/background.png)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 /* Estilos específicos */
 #carouselExampleAutoplaying{
@@ -67,11 +127,15 @@ section {
 #inicio {
   text-align: center;
 }
-.project {
-  margin: 20px;
-  float: left;
+
+.video-container {
+  display: flex; /* Utiliza flexbox para colocar los videos en línea */
+  padding-top: 20px;
 }
 
+.video {
+  margin-right: 20px; /* Ajusta el margen entre los videos según sea necesario */
+}
 .logo{
 	width: 100px;
   margin-bottom: 20px;
@@ -100,3 +164,22 @@ section {
   bottom: 20px;
   right: 20px;
   z-index: 1000; }
+
+  .social{
+    text-align: center;
+  }
+  .social img{
+    width: 30%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  footer{
+    height: 50vh;
+    padding-top: 30px;
+    background-color: #d8ff6e;
+  }
+  footer h1{
+    text-align: center;
+    font-weight: 100;
+  }
