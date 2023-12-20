@@ -34,10 +34,33 @@ h1 {
 .lista{
   font-family: 'Silkscreen', sans-serif;
 }
+
+#contenedorMerch{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+#boton1
+{
+  background-color: #dc91ff;
+  border-color: greenyellow;
+}
+#botonagregar
+  {
+    display: flex;
+      justify-content: center;
+    align-items: center;
+    background-color: #dc91ff;
+    border-color: greenyellow;
+
+}
 #boton
 {
   background-color: #dc91ff;
   border-color: greenyellow;
+  margin-bottom: 50px;
+  margin-right: 20px;
+  float: left;
 }
 h3 {
   font-family: 'Silkscreen', sans-serif;
@@ -115,6 +138,10 @@ nav ul li a {
   padding: 50px;
   margin-right: 50px;
   margin-left: 50px;
+}
+
+.card { height: 200px;
+  width: 350px;
 }
 
 #accordionFlushExample{

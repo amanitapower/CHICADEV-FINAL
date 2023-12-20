@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
   <script src="js/app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <header>
@@ -33,45 +34,22 @@
       </ul>
     </nav>
   </header>
+
+  <h2 class="mb-4">Nuestro merch</h2>
+  <div class="container-lg mb-2">
+    <div class="d-grid gap-2">
+        <button class="btn btn-dark" type="button" data-bs-toggle="modal"
+        data-bs-target="#añadirMerch" id="btn-addBook">
+        <i class="bi bi-plus-circle"></i> 
+        Añadir un nuevo producto
+        </button>
+      </div>
+</div>
+  
   <div class="container mt-5" id="contenedorMerch">
-    <h2 class="mb-4">Nuestro merch</h2>
-  
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/cap1.png" class="card-img-top" alt="Producto 1">
-          <div class="card-body">
-            <h5 class="card-title">CAP</h5>
-            <p class="card-text">Gorrita con mucha onda</p>
-            <a href="#" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal" data-img="img/cap1.png">Ver Detalles</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/mug1.png" class="card-img-top" alt="Producto 2">
-          <div class="card-body">
-            <h5 class="card-title">MUG</h5>
-            <p class="card-text">Alta taza amigue</p>
-            <a href="#" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal" data-img="img/mug1.png">Ver Detalles</a>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/tsh1.png" class="card-img-top" alt="Producto 3">
-          <div class="card-body">
-            <h5 class="card-title">T-SHIRT</h5>
-            <p class="card-text">Mira esta casaca loke</p>
-            <a href="#" class="btn btn-primary" id="boton" data-toggle="modal" data-target="#exampleModal" data-img="img/tsh1.png">Ver Detalles</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </div>
-  
+ 
   <!-- Modal para mostrar la imagen en grande -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -91,6 +69,40 @@
       </div>
     </div>
   </div>
+  
+  
+  <div class="modal fade" id="añadirMerch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-newspaper"></i> Agregar un nuevo producto :)</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addBooksForm" onsubmit="return false;">
+                  <div class="input-group mb-3">
+                    <input type="hidden" id="txtId">
+                  </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-book"></i></span>
+                        <input type="text" id="txtNombre" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-gender-neuter"></i></span>
+                        <input type="text" id="txtDescripcion" class="form-control" placeholder="Descripción" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-file"></i></span>
+                        <input type="text" id="txtImg" class="form-control" placeholder="Imagen" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <input type="submit" value="Agregar" class="form-control btn btn-primary" onclick="appMerch.añadirMerch();">
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
   
   
  <footer>
